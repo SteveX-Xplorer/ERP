@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Login from './pages/Login';
-import Dashbaord from './pages/Dashboard';
+import Dashboard from './pages/Dashboard';
 
 function App(){
   return(
@@ -12,7 +12,7 @@ function App(){
 
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Dashbaord />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path="/login" element={<Login />} /> 
           </Routes>
         </main>
