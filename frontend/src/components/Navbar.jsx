@@ -2,7 +2,7 @@ import  {Link} from 'react-router-dom';
 
 export default function Navbar(){
     return(
-        <nav className="flex justify-between items-center px-8 py-3 bg-[#1a1c1e] text-white border-b border-gray-800 shadow-lg">
+        <nav className="flex justify-between items-center px-8 py-3 bg-[#111827] text-white border-b border-gray-800 shadow-lg h-15 w-full text-s rounded-sm">
             
             <div className="flex items-center gap-3">
                 <span className=" text-2xl">🚀</span>
