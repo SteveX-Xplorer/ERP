@@ -1,10 +1,10 @@
 export default function Login() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[70vh] bg-[#0f172a] px-4">
-      <div className="w-full max-w-md">
+    <div className="flex flex-col items-center justify-center grow w-full bg-[#0f172a] px-4">
+      <div className="w-full max-w-md p-8 bg-[#1e293b] rounded-2xl shadow-2xl border border-gray-700">
 
         <div className="text-center mb-8">
-          <h2 className="text=3xl font-bold text-white">Control Center</h2>
+          <h2 className="text-3xl font-bold text-white">Control Center</h2>
           <p className="text-gray-400 mt-2 text-sm">Enter Credential</p>
         </div>
 
@@ -27,8 +27,7 @@ export default function Login() {
 
           <button 
             type="submit"
-            className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg transform transition active:scale-95"
-          >
+            className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg transform transition active:scale-95">
             Submit
           </button>
 
