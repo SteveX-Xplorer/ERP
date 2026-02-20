@@ -1,5 +1,5 @@
 import {useNavigate} from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Login() {
 
@@ -23,12 +23,13 @@ export default function Login() {
 
       if(data.success){
         navigate("/dashboard");
+        localStorage.setItem("isLoggedIn", "true");
       }else{
         alert(data.message);
       }
     }catch(error){
       console.error("Error in connecting to server", error);
-      alert("Server is down, This is in developer mode");
+      alert("Server is down, Turn on backend Server in ./backend");
     }
   }
 
