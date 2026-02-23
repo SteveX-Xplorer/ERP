@@ -24,6 +24,8 @@ export default function Login() {
       if(data.success){
         navigate("/dashboard");
         localStorage.setItem("isLoggedIn", "true");
+        localStorage.setItem("userEmail", email);
+        localStorage.setItem("userRoles", JSON.stringify(data.roles));
       }else{
         alert(data.message);
       }
