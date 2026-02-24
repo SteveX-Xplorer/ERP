@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import AdminDashboard from './pages/AdminDashboard';
+import ClassLogger from './pages/ClassLogger';
 
 function App(){
   return(
@@ -16,6 +17,7 @@ function App(){
             <Route path="/" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/dashboard/logger" element={<ClassLogger />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>
