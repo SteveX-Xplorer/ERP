@@ -16,9 +16,25 @@ function App(){
 
         <main className="grow flex flex-col">
           <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/admin" element={<AdminDashboard />} />
+
+            <Route path="/" element={
+              <PublicRoute>
+                <Login />
+              </PublicRoute>
+            } />
+
+          <Route path="/dashboard" element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/admin" element={
+              <ProtectedRoute requireAdmin={true}>
+                <AdminDashboard />
+              </ProtectedRoute>
+            } />
+            
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>
