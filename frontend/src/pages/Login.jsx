@@ -1,5 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import { useEffect, useState } from "react";
+import PrimaryButton from '../components/PrimaryButton';
 
 export default function Login() {
 
@@ -68,12 +69,11 @@ export default function Login() {
               onChange={(e)=>setPassword(e.target.value)}
             />
           </div>
-
-          <button 
-            type="submit"
-            className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg transform transition active:scale-95">
-            Submit
-          </button>
+          
+          <PrimaryButton 
+            text="Submit"
+            onClick={handleLogin}
+          />
 
         </form>
 
